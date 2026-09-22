@@ -9,7 +9,7 @@ using Entities;
 
 namespace InMemoryRepositories
 {
-    internal class PostInMemoryRepository : IPostRepository
+    public class PostInMemoryRepository : IPostRepository
     {
 
         private List<Post> posts { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace InMemoryRepositories
 {
-    internal class CommentInMemoryRepository : ICommentRepository
+    public class CommentInMemoryRepository : ICommentRepository
     {
         private List<Comment> comments { get; set; }
 

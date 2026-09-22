@@ -9,3 +9,12 @@ C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\InMemoryRepositories
 C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\InMemoryRepositories\obj\Debug\InMemory.C4D1EAE1.Up2Date
 C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\InMemoryRepositories\obj\Debug\InMemoryRepositories.dll
 C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\InMemoryRepositories\obj\Debug\InMemoryRepositories.pdb
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\bin\Debug\InMemoryRepositories.dll
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\bin\Debug\InMemoryRepositories.pdb
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\bin\Debug\Entities.pdb
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\bin\Debug\RepositoryContracts.pdb
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\obj\Debug\InMemoryRepositories.csproj.AssemblyReference.cache
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\obj\Debug\InMemoryRepositories.csproj.CoreCompileInputs.cache
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\obj\Debug\InMemory.C4D1EAE1.Up2Date
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\obj\Debug\InMemoryRepositories.dll
+C:\Users\iljaz\source\repos\DNP\Server\InMemoryRepositories\obj\Debug\InMemoryRepositories.pdb

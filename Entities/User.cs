@@ -13,6 +13,11 @@ namespace Entities
         {
             this.Id = id;
         }
+
+        public String toCliString()
+        {
+            return Id + " | " + Name + " | " + PasswordHash;
+        }
         public int Id { get; set; }
         public string PasswordHash { get; set; }
         public string Name { get; set; }

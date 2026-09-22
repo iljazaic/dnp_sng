@@ -1,0 +1,15 @@
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\CLI.csproj.AssemblyReference.cache
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\CLI.csproj.CoreCompileInputs.cache
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\Entities.dll
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\InMemoryRepositories.dll
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\RepositoryContracts.dll
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\Entities.pdb
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\InMemoryRepositories.pdb
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\bin\Debug\RepositoryContracts.pdb
+C:\Users\iljaz\source\repos\DNP\Server\CLI\ConsoleApp1\ConsoleApp1\obj\Debug\CLI.csproj.Up2Date

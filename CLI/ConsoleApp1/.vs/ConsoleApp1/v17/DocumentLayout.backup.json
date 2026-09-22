@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\cliapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\cliapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageusers\\createuserview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageusers\\createuserview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageusers\\listusersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageusers\\listusersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageusers\\manageusersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageusers\\manageusersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageposts\\singlepostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageposts\\singlepostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageposts\\managepostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageposts\\managepostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageposts\\listpostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageposts\\listpostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\cli\\consoleapp1\\consoleapp1\\ui\\manageposts\\createpostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0A649E-A08C-4879-B177-161E9391AD97}|ConsoleApp1\\CLI.csproj|solutionrelative:consoleapp1\\ui\\manageposts\\createpostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageUsersView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\ManageUsersView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManageUsers\\ManageUsersView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\ManageUsersView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManageUsers\\ManageUsersView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:50:15.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListUsersView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\ListUsersView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManageUsers\\ListUsersView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\ListUsersView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManageUsers\\ListUsersView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:50:08.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateUserView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\CreateUserView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManageUsers\\CreateUserView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManageUsers\\CreateUserView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManageUsers\\CreateUserView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:50:00.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SinglePostView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\SinglePostView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManagePosts\\SinglePostView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\SinglePostView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManagePosts\\SinglePostView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:49:52.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagePostView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\ManagePostView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManagePosts\\ManagePostView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\ManagePostView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManagePosts\\ManagePostView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:49:46.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListPostView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\ListPostView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManagePosts\\ListPostView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\ListPostView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManagePosts\\ListPostView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:49:39.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreatePostView.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\CreatePostView.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\ManagePosts\\CreatePostView.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\ManagePosts\\CreatePostView.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\ManagePosts\\CreatePostView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:49:31.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CliApp.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\CliApp.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\UI\\CliApp.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\UI\\CliApp.cs",
+              "RelativeToolTip": "ConsoleApp1\\UI\\CliApp.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:07:36.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\CLI\\ConsoleApp1\\ConsoleApp1\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T07:04:44.932Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 68,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
