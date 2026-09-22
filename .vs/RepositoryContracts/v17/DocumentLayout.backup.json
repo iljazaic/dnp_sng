@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\repositorycontracts\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|solutionrelative:repositorycontracts\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\repositorycontracts\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|solutionrelative:repositorycontracts\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|c:\\users\\iljaz\\source\\repos\\dnp\\server\\repositorycontracts\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E86F25BE-115D-4CC4-8DBA-B395B0112AD6}|RepositoryContracts\\RepositoryContracts.csproj|solutionrelative:repositorycontracts\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryContracts\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\ICommentRepository.cs",
+              "RelativeToolTip": "RepositoryContracts\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T04:20:14.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryContracts\\IPostRepository.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\IPostRepository.cs*",
+              "RelativeToolTip": "RepositoryContracts\\IPostRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T04:19:09.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryContracts\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\iljaz\\source\\repos\\DNP\\Server\\RepositoryContracts\\IUserRepository.cs",
+              "RelativeToolTip": "RepositoryContracts\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T04:18:56.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 68,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

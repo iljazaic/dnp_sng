@@ -1,0 +1,71 @@
+﻿using Entities;
+using RepositoryContracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InMemoryRepositories
+{
+    internal class UserInMemoryRepository : IUserRepository
+    {
+        private List<User> Users { get; set; }
+
+
+        public Task<User> AddAsync(User User)
+        {
+            User.Id = Users.Any()
+                ? Users.Max(p => p.Id) + 1
+                : 1;
+            Users.Add(User);
+            return Task.FromResult(User);
+        }
+
+        public Task UpdateAsync(User User)
+        {
+            User existingUser = Users.SingleOrDefault(p => p.Id == User.Id);
+            if (existingUser is null)
+            {
+                throw new InvalidOperationException(
+                        $"User with ID '{User.Id}' not found");
+            }
+
+            Users.Remove(existingUser);
+            Users.Add(User);
+
+            return Task.CompletedTask;
+        }
+
+
+        public Task DeleteAsync(int id)
+        {
+            User UserToRemove = Users.SingleOrDefault(p => p.Id == id);
+            if (UserToRemove is null)
+            {
+                throw new InvalidOperationException(
+                                $"User with ID '{id}' not found");
+            }
+
+            Users.Remove(UserToRemove);
+            return Task.CompletedTask;
+        }
+
+        public Task<User> GetSingleAsync(int id)
+        {
+            User User = Users.SingleOrDefault(p => p.Id == id);
+            if (User is null)
+            {
+                throw new InvalidOperationException(
+                                $"User with ID '{id}' not found");
+            }
+
+            return Task.FromResult(User);
+        }
+
+        public IQueryable<User> GetMany()
+        {
+            return Users.AsQueryable();
+        }
+    }
+}

@@ -1,0 +1,9 @@
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\bin\Debug\RepositoryContracts.dll
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\bin\Debug\RepositoryContracts.pdb
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\bin\Debug\Entities.dll
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\bin\Debug\Entities.pdb
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\obj\Debug\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\obj\Debug\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\obj\Debug\Reposito.28D4BA81.Up2Date
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\obj\Debug\RepositoryContracts.dll
+C:\Users\iljaz\source\repos\DNP\Server\RepositoryContracts\obj\Debug\RepositoryContracts.pdb
