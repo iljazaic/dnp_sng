@@ -1,71 +1,150 @@
 ﻿using Entities;
 using RepositoryContracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace InMemoryRepositories
+namespace InMemoryRepositories;
+
+public class UserInMemoryRepository : IUserRepository
 {
-    public class UserInMemoryRepository : IUserRepository
+    private readonly List<User> users = new();
+    private readonly List<Follow> follows = new();
+
+    public UserInMemoryRepository()
     {
-        private List<User> Users { get; set; }
+        SeedData();
+    }
 
-
-        public Task<User> AddAsync(User User)
+    private void SeedData()
+    {
+        users.AddRange(new[]
         {
-            User.Id = Users.Any()
-                ? Users.Max(p => p.Id) + 1
-                : 1;
-            Users.Add(User);
-            return Task.FromResult(User);
-        }
+            new User { Id = 1, UserName = "alizo", Password = "password1", Email = "alizo@example.com", PhoneNumber = null, IsModerator = true, CreatedDate = DateTime.Now.AddDays(-30) },
+            new User { Id = 2, UserName = "reze", Password = "password2", Email = "reze@example.com", PhoneNumber = null, IsModerator = false, CreatedDate = DateTime.Now.AddDays(-29) },
+            new User { Id = 3, UserName = "mikeexile", Password = "password3", Email = "mikeexile@example.com", PhoneNumber = null, IsModerator = false, CreatedDate = DateTime.Now.AddDays(-28) },
+            new User { Id = 4, UserName = "toyotazeppelin", Password = "password4", Email = "toyotazeppelin@example.com", PhoneNumber = null, IsModerator = false, CreatedDate = DateTime.Now.AddDays(-27) }
+        });
 
-        public Task UpdateAsync(User User)
+        // everyone follows everyone
+        int followId = 1;
+        foreach (User follower in users)
         {
-            User existingUser = Users.SingleOrDefault(p => p.Id == User.Id);
-            if (existingUser is null)
+            foreach (User following in users)
             {
-                throw new InvalidOperationException(
-                        $"User with ID '{User.Id}' not found");
+                if (follower.Id == following.Id)
+                {
+                    continue;
+                }
+
+                follows.Add(new Follow
+                {
+                    Id = followId++,
+                    FollowerId = follower.Id,
+                    FollowingId = following.Id,
+                    CreatedDate = DateTime.Now.AddDays(-26)
+                });
             }
-
-            Users.Remove(existingUser);
-            Users.Add(User);
-
-            return Task.CompletedTask;
         }
+    }
 
+    public Task<User> AddAsync(User user)
+    {
+        user.Id = users.Any() ? users.Max(u => u.Id) + 1 : 1;
+        users.Add(user);
+        return Task.FromResult(user);
+    }
 
-        public Task DeleteAsync(int id)
+    public Task UpdateAsync(User user)
+    {
+        User? existingUser = users.SingleOrDefault(u => u.Id == user.Id);
+        if (existingUser is null)
         {
-            User UserToRemove = Users.SingleOrDefault(p => p.Id == id);
-            if (UserToRemove is null)
-            {
-                throw new InvalidOperationException(
-                                $"User with ID '{id}' not found");
-            }
-
-            Users.Remove(UserToRemove);
-            return Task.CompletedTask;
+            throw new InvalidOperationException(
+                $"User with ID '{user.Id}' not found");
         }
 
-        public Task<User> GetSingleAsync(int id)
+        users.Remove(existingUser);
+        users.Add(user);
+
+        return Task.CompletedTask;
+    }
+
+    public Task DeleteAsync(int id)
+    {
+        User? userToRemove = users.SingleOrDefault(u => u.Id == id);
+        if (userToRemove is null)
         {
-            User User = Users.SingleOrDefault(p => p.Id == id);
-            if (User is null)
-            {
-                throw new InvalidOperationException(
-                                $"User with ID '{id}' not found");
-            }
-
-            return Task.FromResult(User);
+            throw new InvalidOperationException(
+                $"User with ID '{id}' not found");
         }
 
-        public IQueryable<User> GetMany()
+        users.Remove(userToRemove);
+        return Task.CompletedTask;
+    }
+
+    public Task<User> GetSingleAsync(int id)
+    {
+        User? user = users.SingleOrDefault(u => u.Id == id);
+        if (user is null)
         {
-            return Users.AsQueryable();
+            throw new InvalidOperationException(
+                $"User with ID '{id}' not found");
         }
+
+        return Task.FromResult(user);
+    }
+
+    public IQueryable<User> GetMany()
+    {
+        return users.AsQueryable();
+    }
+
+    public Task FollowAsync(int followerId, int followingId)
+    {
+        if (followerId == followingId)
+        {
+            throw new InvalidOperationException("A user cannot follow themselves");
+        }
+
+        bool alreadyFollowing = follows.Any(f => f.FollowerId == followerId && f.FollowingId == followingId);
+        if (alreadyFollowing)
+        {
+            throw new InvalidOperationException(
+                $"User '{followerId}' already follows user '{followingId}'");
+        }
+
+        Follow follow = new()
+        {
+            Id = follows.Any() ? follows.Max(f => f.Id) + 1 : 1,
+            FollowerId = followerId,
+            FollowingId = followingId,
+            CreatedDate = DateTime.Now
+        };
+        follows.Add(follow);
+
+        return Task.CompletedTask;
+    }
+
+    public Task UnfollowAsync(int followerId, int followingId)
+    {
+        Follow? follow = follows.SingleOrDefault(f => f.FollowerId == followerId && f.FollowingId == followingId);
+        if (follow is null)
+        {
+            throw new InvalidOperationException(
+                $"User '{followerId}' does not follow user '{followingId}'");
+        }
+
+        follows.Remove(follow);
+        return Task.CompletedTask;
+    }
+
+    public IQueryable<User> GetFollowers(int userId)
+    {
+        List<int> followerIds = follows.Where(f => f.FollowingId == userId).Select(f => f.FollowerId).ToList();
+        return users.Where(u => followerIds.Contains(u.Id)).AsQueryable();
+    }
+
+    public IQueryable<User> GetFollowing(int userId)
+    {
+        List<int> followingIds = follows.Where(f => f.FollowerId == userId).Select(f => f.FollowingId).ToList();
+        return users.Where(u => followingIds.Contains(u.Id)).AsQueryable();
     }
 }

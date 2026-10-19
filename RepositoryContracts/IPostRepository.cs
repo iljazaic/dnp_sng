@@ -1,18 +1,22 @@
 ﻿using Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RepositoryContracts
+namespace RepositoryContracts;
+
+public interface IPostRepository
 {
-    public interface IPostRepository
-    {
-        Task<Post> AddAsync(Post post);
-        Task UpdateAsync(Post post);
-        Task DeleteAsync(int id);
-        Task<Post> GetSingleAsync(int id);
-        IQueryable<Post> GetMany();
-    }
+    Task<Post> AddAsync(Post post);
+    Task UpdateAsync(Post post);
+    Task DeleteAsync(int id);
+    Task<Post> GetSingleAsync(int id);
+    IQueryable<Post> GetMany();
+
+    //like logic
+    Task LikeAsync(int postId, int userId);
+    Task UnlikeAsync(int postId, int userId);
+    Task<int> GetLikeCountAsync(int postId);
+
+    //tag logic
+    Task AddTagAsync(int postId, int tagId);
+    Task RemoveTagAsync(int postId, int tagId);
+    IQueryable<Tag> GetTagsForPost(int postId);
 }
