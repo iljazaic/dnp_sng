@@ -8,4 +8,7 @@ public class Comment
     public int PostId { get; set; }
     public int? ParentCommentId { get; set; }
     public DateTime CreatedDate { get; set; }
+
+    public User User { get; set; } = null!;
+    public Post Post { get; set; } = null!;
 }

@@ -1,0 +1,11 @@
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\bin\Debug\net10.0\ApiContracts.deps.json
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\bin\Debug\net10.0\ApiContracts.dll
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\bin\Debug\net10.0\ApiContracts.pdb
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.AssemblyInfoInputs.cache
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.AssemblyInfo.cs
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.csproj.CoreCompileInputs.cache
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.dll
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\refint\ApiContracts.dll
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ApiContracts.pdb
+C:\Users\iljaz\Desktop\vibecoding\dnp_sng-main\ApiContracts\obj\Debug\net10.0\ref\ApiContracts.dll

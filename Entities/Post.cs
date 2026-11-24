@@ -7,4 +7,7 @@ public class Post
     public string Body { get; set; }
     public int UserId { get; set; }
     public DateTime CreatedDate { get; set; }
+
+    public User User { get; set; } = null!;
+    public List<Comment> Comments { get; set; } = new();
 }

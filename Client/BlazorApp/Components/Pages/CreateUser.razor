@@ -1,0 +1,42 @@
+@page "/register"
+@inject IUserService UserService
+@inject NavigationManager navMgr
+
+<h3>Add new user</h3>
+<label>User name:</label>
+<input type="text" @bind="userName"/>
+<label>Password:</label>
+<input type="password" @bind="password"/>
+<label>Email:</label>
+<input type="text" @bind="email"/>
+@if (!string.IsNullOrEmpty(errorLabel))
+{
+    <label style="color: red">@errorLabel</label>
+}
+<button @onclick="AddUserAsync">Create</button>
+
+@code {
+    private string userName = "";
+    private string password = "";
+    private string email = "";
+    private string errorLabel = "";
+
+    private async Task AddUserAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            await UserService.AddUserAsync(new CreateUserDto
+            {
+                UserName = userName,
+                Password = password,
+                Email = email
+            });
+            navMgr.NavigateTo("/login");
+        }
+        catch (Exception e)
+        {
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}

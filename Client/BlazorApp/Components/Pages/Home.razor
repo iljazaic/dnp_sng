@@ -1,0 +1,25 @@
+﻿@page "/"
+@inject NavigationManager NavMgr
+@inject AuthenticationStateProvider AuthProvider
+<PageTitle>Home</PageTitle>
+
+<h1>Reddit Clone</h1>
+
+<AuthorizeView>
+    <Authorized>
+        <h3>Hello, @context.User.Identity.Name</h3>
+        <button @onclick="LogoutAsync">Log out</button>
+    </Authorized>
+    <NotAuthorized>
+        lol you are not logged in!
+        <button @onclick='() => NavMgr.NavigateTo("login")'>go to login</button>
+    </NotAuthorized>
+</AuthorizeView>
+<p>Here you can browse interesting posts.</p>
+
+@code {
+    private async Task LogoutAsync()
+    {
+        await ((SimpleAuthProvider)AuthProvider).Logout();
+    }
+}

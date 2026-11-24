@@ -1,0 +1,38 @@
+@page "/posts"
+@inject IPostService PostService
+
+<h3>Posts</h3>
+@if (!string.IsNullOrEmpty(errorLabel))
+{
+    <label style="color: red">@errorLabel</label>
+}
+else if (posts is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (PostDto post in posts)
+        {
+            <li><a href="/posts/@post.Id">@post.Title</a> by @post.AuthorUserName</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<PostDto>? posts;
+    private string errorLabel = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            posts = await PostService.GetPostsAsync();
+        }
+        catch (Exception e)
+        {
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}

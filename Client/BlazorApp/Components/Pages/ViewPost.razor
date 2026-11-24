@@ -1,0 +1,77 @@
+@page "/posts/{Id:int}"
+@inject IPostService PostService
+@inject ICommentService CommentService
+
+@if (!string.IsNullOrEmpty(errorLabel))
+{
+    <label style="color: red">@errorLabel</label>
+}
+@if (post is not null)
+{
+    <h3>@post.Title</h3>
+    <p>@post.Body</p>
+    <p>By @post.AuthorUserName</p>
+
+    <h4>Comments</h4>
+    @foreach (CommentDto comment in post.Comments ?? new())
+    {
+        <p><b>@comment.AuthorUserName</b>: @comment.Body</p>
+    }
+
+    <AuthorizeView>
+        <Authorized>
+            <input type="text" @bind="commentBody"/>
+            <button @onclick="AddCommentAsync">Add comment</button>
+        </Authorized>
+        <NotAuthorized>
+            <p>Log in to comment.</p>
+        </NotAuthorized>
+    </AuthorizeView>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+    [CascadingParameter] public Task<AuthenticationState> State { get; set; } = null!;
+    private PostDto? post;
+    private string commentBody = "";
+    private string errorLabel = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPostAsync();
+    }
+
+    private async Task LoadPostAsync()
+    {
+        try
+        {
+            post = await PostService.GetPostAsync(Id);
+        }
+        catch (Exception e)
+        {
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+
+    private async Task AddCommentAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            AuthenticationState authenticationState = await State;
+            int userId = int.Parse(authenticationState.User.Claims.Single(c => c.Type == "Id").Value);
+            await CommentService.AddCommentAsync(new CreateCommentDto
+            {
+                Body = commentBody,
+                UserId = userId,
+                PostId = Id
+            });
+            commentBody = "";
+            await LoadPostAsync();
+        }
+        catch (Exception e)
+        {
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}
